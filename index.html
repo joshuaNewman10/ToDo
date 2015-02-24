@@ -1,12 +1,29 @@
-<<html>
+<html>
   <head>
     <title>ToDo List</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="CSS/styles.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="CSS/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
+      <div clas="row">
+        <div class="app col-md-12">
+          <h2>Task Manager</h2>
+        </div>   
+      </div>       
+    </div>
     <script src="lib/jquery.js"></script>
     <script src="lib/underscore.js"></script>
     <script src="lib/backbone.js"></script>
+    <script src="src/AppModel.js"></script>
+    <script src="src/AppView.js"></script>
+    <script src="src/TaskModel.js"></script>
+    <script src="src/TaskView.js"></script>
+    <script src="src/Tasks.js"></script>
+    <script src="src/TasksView.js"></script>
+    <script src="data.js"></script>
     <script src="main.js"></script>
+
+
   </body>
 </html>
