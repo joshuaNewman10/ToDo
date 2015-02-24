@@ -3,11 +3,12 @@ var AppView = Backbone.View.extend({
   
   initialize: function() {
     this.tasksView = new TasksView({collection: this.model.get('tasks')});
+    this.interactionView = new InteractionView({el: $('.add')});
     this.render();
   },
 
   render: function() {
-   return this.$el.append([
+   return this.$el.find('.tasks').append([
       this.tasksView.$el
     ]);
   }

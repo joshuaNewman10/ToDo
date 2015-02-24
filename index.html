@@ -5,10 +5,17 @@
     <link href="CSS/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
+    <div class="app container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Today's Tasks</h1>
+        </div>
+        <div class="interact col-md-6">
+          <button class="add" type="button">Add Task</button>
+        </div>
+      </div>
       <div clas="row">
-        <div class="app col-md-12">
-          <h2>Task Manager</h2>
+        <div class="tasks col-md-12">
         </div>   
       </div>       
     </div>
@@ -21,6 +28,7 @@
     <script src="src/TaskView.js"></script>
     <script src="src/Tasks.js"></script>
     <script src="src/TasksView.js"></script>
+    <script src="src/InteractionView.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
 
